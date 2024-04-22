@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/328128838d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              frank: ["Frank Ruhl Libre", "serif"],
+              lato: ["Lato", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      .bg-gradient {
+        background: rgb(152, 58, 237);
+        background: linear-gradient(
+          180deg,
+          rgba(152, 58, 237, 1) 0%,
+          rgba(168, 85, 247, 1) 33%,
+          rgba(216, 180, 254, 1) 59%,
+          rgba(255, 255, 255, 1) 100%
+        );
+      }
+
+      .bg-glass {
+        background: rgba(255, 255, 255, 0.18);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.8px);
+        -webkit-backdrop-filter: blur(6.8px);
+      }
+    </style>
+
+    <title>Arvi Hijab</title>
+  </head>
+  <body>
+    <div class="min-h-screen w-full flex flex-col">
+      <!-- navbar -->
+      <div
+        class="absolute top-0 left-0 right-0 px-5 lg:px-0 py-6 flex flex-row justify-between items-center bg-transparent max-w-5xl font-lato max-w-5xl w-full mx-auto"
+      >
+        <div class="logo"><h1 class="text-2xl font-semibold">AH</h1></div>
+        <div class="menu hidden lg:flex">
+          <ul class="w-full flex flex-row text-2xl font-semibold gap-x-4">
+            <li><a href="#AboutUs">About Us</a></li>
+            <li><a href="#Collections">Collections</a></li>
+            <li><a href="#OurProducts">Our Products</a></li>
+            <li><a href="#FAQ">FAQ</a></li>
+            <li><a href="#ContactUs">Contact Us</a></li>
+          </ul>
+        </div>
+        <div
+          id="btn-menu"
+          class="lg:hidden flex flex-col gap-y-1 cursor-pointer"
+        >
+          <span
+            id="top"
+            class="w-7 h-1 bg-black block rounded-full transition-all origin-top-left"
+          ></span>
+          <span
+            id="middle"
+            class="w-7 h-1 bg-black block rounded-full transition-all"
+          ></span>
+          <span
+            id="bottom"
+            class="w-7 h-1 bg-black block rounded-full transition-all origin-bottom-left"
+          ></span>
+        </div>
+        <div
+          id="menu-sm"
+          class="absolute menu-sm lg:hidden -top-72 transition-all duration-700 left-0 py-5 w-full rounded-xl bg-glass"
+        >
+          <ul
+            class="w-full flex flex-col text-2xl font-semibold gap-y-4 items-center"
+          >
+            <li class="w-full flex-row text-center">
+              <a class="w-full" href="#AboutUs">About Us</a>
+            </li>
+            <li class="w-full flex-row text-center">
+              <a class="w-full" href="#Collections">Collections</a>
+            </li>
+            <li class="w-full flex-row text-center">
+              <a class="w-full" href="#OurProducts">Our Products</a>
+            </li>
+            <li class="w-full flex-row text-center">
+              <a class="w-full" href="#FAQ">FAQ</a>
+            </li>
+            <li class="w-full flex-row text-center">
+              <a class="w-full" href="#ContactUs">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- navbar -->
+
+      <!-- header -->
+      <div class="bg-gradient w-full min-h-screen"></div>
+      <!-- header -->
+    </div>
+
+    <script>
+      document.getElementById("btn-menu").addEventListener("click", () => {
+        document.getElementById("top").classList.toggle("rotate-[37deg]");
+        document.getElementById("middle").classList.toggle("scale-0");
+        document.getElementById("bottom").classList.toggle("-rotate-[37deg]");
+        document.getElementById("menu-sm").classList.toggle("top-20");
+      });
+    </script>
+  </body>
+</html>
