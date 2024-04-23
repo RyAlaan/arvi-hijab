@@ -71,58 +71,90 @@
     <div class="min-h-screen w-full flex flex-col">
       <!-- navbar -->
       <div
-        class="absolute top-0 left-0 right-0 px-5 md:px-20 py-6 flex flex-row justify-between items-center bg-transparent font-lato max-w-7xl w-full mx-auto"
+        id="navbar"
+        class="top-0 left-0 right-0 fixed bg-transparent z-[999] rounded-none"
       >
-        <div class="logo"><h1 class="text-2xl font-semibold">AH</h1></div>
-        <div class="menu hidden lg:flex">
-          <ul class="w-full flex flex-row text-2xl font-semibold gap-x-4">
-            <li><a href="#AboutUs">About Us</a></li>
-            <li><a href="#Collections">Collections</a></li>
-            <li><a href="#OurProducts">Our Products</a></li>
-            <li><a href="#FAQ">FAQ</a></li>
-            <li><a href="#ContactUs">Contact Us</a></li>
-          </ul>
-        </div>
         <div
-          id="btn-menu"
-          class="lg:hidden flex flex-col gap-y-1 cursor-pointer"
+          class="max-w-7xl w-full mx-auto px-5 md:px-20 py-6 flex flex-row justify-between items-center font-lato"
         >
-          <span
-            id="top"
-            class="w-7 h-1 bg-black block rounded-full transition-all origin-top-left"
-          ></span>
-          <span
-            id="middle"
-            class="w-7 h-1 bg-black block rounded-full transition-all"
-          ></span>
-          <span
-            id="bottom"
-            class="w-7 h-1 bg-black block rounded-full transition-all origin-bottom-left"
-          ></span>
-        </div>
-        <div
-          id="menu-sm"
-          class="absolute menu-sm lg:hidden -top-72 transition-all duration-700 left-0 py-5 w-full rounded-xl bg-glass"
-        >
-          <ul
-            class="w-full flex flex-col text-2xl font-semibold gap-y-4 items-center"
+          <div class="logo"><h1 class="text-2xl font-semibold">AH</h1></div>
+          <div class="menu hidden lg:flex">
+            <ul
+              class="w-full flex flex-row text-2xl font-semibold text-[#34251F] gap-x-4"
+            >
+              <li class="flex flex-col group">
+                <a href="#about-us">About Us</a
+                ><span
+                  class="w-10/12 h-1 self-center rounded-md scale-0 group-hover:scale-100 transition-all duration-500 bg-[#34251F]"
+                ></span>
+              </li>
+              <li class="flex flex-col group">
+                <a href="#collections">Collections</a
+                ><span
+                  class="w-10/12 h-1 self-center rounded-md scale-0 group-hover:scale-100 transition-all duration-500 bg-[#34251F]"
+                ></span>
+              </li>
+              <li class="flex flex-col group">
+                <a href="#our-products">Our Products</a
+                ><span
+                  class="w-10/12 h-1 self-center rounded-md scale-0 group-hover:scale-100 transition-all duration-500 bg-[#34251F]"
+                ></span>
+              </li>
+              <li class="flex flex-col group">
+                <a href="#faq">FAQ</a
+                ><span
+                  class="w-10/12 h-1 self-center rounded-md scale-0 group-hover:scale-100 transition-all duration-500 bg-[#34251F]"
+                ></span>
+              </li>
+              <li class="flex flex-col group">
+                <a href="#contact-us">Contact Us</a
+                ><span
+                  class="w-10/12 h-1 self-center rounded-md scale-0 group-hover:scale-100 transition-all duration-500 bg-[#34251F]"
+                ></span>
+              </li>
+            </ul>
+          </div>
+          <div
+            id="btn-menu"
+            class="lg:hidden flex flex-col gap-y-1 cursor-pointer"
           >
-            <li class="w-full flex-row text-center">
-              <a class="w-full" href="#AboutUs">About Us</a>
-            </li>
-            <li class="w-full flex-row text-center">
-              <a class="w-full" href="#Collections">Collections</a>
-            </li>
-            <li class="w-full flex-row text-center">
-              <a class="w-full" href="#OurProducts">Our Products</a>
-            </li>
-            <li class="w-full flex-row text-center">
-              <a class="w-full" href="#FAQ">FAQ</a>
-            </li>
-            <li class="w-full flex-row text-center">
-              <a class="w-full" href="#ContactUs">Contact Us</a>
-            </li>
-          </ul>
+            <span
+              id="top"
+              class="w-7 h-1 bg-black block rounded-full transition-all origin-top-left"
+            ></span>
+            <span
+              id="middle"
+              class="w-7 h-1 bg-black block rounded-full transition-all"
+            ></span>
+            <span
+              id="bottom"
+              class="w-7 h-1 bg-black block rounded-full transition-all origin-bottom-left"
+            ></span>
+          </div>
+          <div
+            id="menu-sm"
+            class="absolute menu-sm lg:hidden -top-72 transition-all duration-700 left-0 py-5 px-5 md:px-16 w-full rounded-xl z-[999]"
+          >
+            <ul
+              class="w-full flex flex-col text-xl md:text-2xl font-semibold gap-y-4 items-center bg-glass px-10 py-5"
+            >
+              <li class="w-full flex-row text-center">
+                <a class="w-full" href="#about-us">About Us</a>
+              </li>
+              <li class="w-full flex-row text-center">
+                <a class="w-full" href="#collections">Collections</a>
+              </li>
+              <li class="w-full flex-row text-center">
+                <a class="w-full" href="#our-products">Our Products</a>
+              </li>
+              <li class="w-full flex-row text-center">
+                <a class="w-full" href="#faq">FAQ</a>
+              </li>
+              <li class="w-full flex-row text-center">
+                <a class="w-full" href="#contact-us">Contact Us</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <!-- navbar -->
@@ -132,7 +164,7 @@
         class="bg-gradient w-full min-h-[725px] lg:min-h-screen flex flex-row justify-between items-center"
       >
         <div
-          class="max-w-7xl w-full mx-auto px-20 my-20 flex flex-col-reverse lg:flex-row justify-between items-center gap-y-10 lg:h-[489px]"
+          class="max-w-7xl w-full mx-auto px-20 my-20 flex flex-col-reverse lg:flex-row justify-between items-center gap-y-10 lg:h-[489px] z-[90]"
         >
           <div
             class="text-[#34251F] max-w-[453px] py-5 flex flex-col justify-between gap-y-4 lg:gap-0 h-full"
@@ -140,23 +172,23 @@
             <div class="text-3xl lg:text-6xl font-frank font-bold">
               Temukan Gaya Yang Terbaik Untukmu
             </div>
-            <div class="text-xl lg:text-2xl font-frank">
+            <div class="text-md lg:text-2xl font-frank">
               Kami menyediakan Busana Muslim yang terbaik dan yang pastinya
               nyaman untuk digunakan
             </div>
             <a href="">
               <div
-                class="bg-[#34251F] text-white w-fit px-4 py-5 text-2xl hover:scale-105 transition-all"
+                class="bg-[#34251F] text-white w-fit px-2 md:px-4 py-3 md:py-5 font-lato font-semibold md:text-2xl hover:scale-105 transition-all"
               >
                 Beli Sekarang
               </div>
             </a>
           </div>
           <div
-            class="w-[284px] lg:w-[373px] h-[373px] lg:h-[498px] bg-gradient-hero rounded-tl-[90px] rounded-br-[90px]"
+            class="w-[247px] lg:w-[373px] h-[373px] lg:h-[498px] bg-gradient-hero rounded-tl-[90px] rounded-br-[90px]"
           ></div>
         </div>
-        <div class="absolute">
+        <div class="absolute bottom-40 left-0 right-0" style="z-index: 1">
           <svg
             width="9999"
             height="190"
@@ -164,45 +196,44 @@
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <!-- Gelombang pertama -->
             <path
-              d="M0 151.055C49.2 127.115 98.4 127.115 147.6 151.055C196.8 174.995 246 174.995 295.2 151.055C344.4 127.115 393.6 127.115 442.8 151.055C492 174.995 541.2 174.995 590.4 151.055C639.6 127.115 688.8 127.115 738 151.055C787.2 174.995 836.4 174.995 885.6 151.055C934.8 127.115 984 127.115 1033.2 151.055C1082.4 174.995 1131.6 174.995 1180.8 151.055C1230 127.115 1279.2 127.115 1328.4 151.055C1377.6 174.995 1426.8 174.995 1476 151.055"
+              d="M0 18.955C49.2 -4.985 98.4 -4.985 147.6 18.955C196.8 42.895 246 42.895 295.2 18.955C344.4 -4.985 393.6 -4.985 442.8 18.955C492 42.895 541.2 42.895 590.4 18.955C639.6 -4.985 688.8 -4.985 738 18.955C787.2 42.895 836.4 42.895 885.6 18.955C934.8 -4.985 984 -4.985 1033.2 18.955C1082.4 42.895 1131.6 42.895 1180.8 18.955C1230 -4.985 1279.2 -4.985 1328.4 18.955C1377.6 42.895 1426.8 42.895 1476 18.955C1525.2 -4.985 1574.4 -4.985 1623.6 18.955C1672.8 42.895 1722 42.895 1771.2 18.955C1820.4 -4.985 1869.6 -4.985 1918.8 18.955C1968 42.895 2017.2 42.895 2066.4 18.955C2115.6 -4.985 2164.8 -4.985 2214 18.955C2263.2 42.895 2312.4 42.895 2361.6 18.955C2410.8 -4.985 2460 -4.985 2509.2 18.955C2558.4 42.895 2607.6 42.895 2656.8 18.955C2706 -4.985 2755.2 "
               stroke="#4E4842"
               stroke-opacity="0.15"
               stroke-width="2"
               stroke-linejoin="round"
             />
 
-            <!-- Gelombang kedua -->
             <path
-              d="M0 122.21C49.2 98.27 98.4 98.27 147.6 122.21C196.8 146.15 246 146.15 295.2 122.21C344.4 98.27 393.6 98.27 442.8 122.21C492 146.15 541.2 146.15 590.4 122.21C639.6 98.27 688.8 98.27 738 122.21C787.2 146.15 836.4 146.15 885.6 122.21C934.8 98.27 984 98.27 1033.2 122.21C1082.4 146.15 1131.6 146.15 1180.8 122.21C1230 98.27 1279.2 98.27 1328.4 122.21C1377.6 146.15 1426.8 146.15 1476 122.21"
+              d="M0 18.955C49.2 -4.985 98.4 -4.985 147.6 18.955C196.8 42.895 246 42.895 295.2 18.955C344.4 -4.985 393.6 -4.985 442.8 18.955C492 42.895 541.2 42.895 590.4 18.955C639.6 -4.985 688.8 -4.985 738 18.955C787.2 42.895 836.4 42.895 885.6 18.955C934.8 -4.985 984 -4.985 1033.2 18.955C1082.4 42.895 1131.6 42.895 1180.8 18.955C1230 -4.985 1279.2 -4.985 1328.4 18.955C1377.6 42.895 1426.8 42.895 1476 18.955C1525.2 -4.985 1574.4 -4.985 1623.6 18.955C1672.8 42.895 1722 42.895 1771.2 18.955C1820.4 -4.985 1869.6 -4.985 1918.8 18.955C1968 42.895 2017.2 42.895 2066.4 18.955C2115.6 -4.985 2164.8 -4.985 2214 18.955C2263.2 42.895 2312.4 42.895 2361.6 18.955C2410.8 -4.985 2460 -4.985 2509.2 18.955C2558.4 42.895 2607.6 42.895 2656.8 18.955C2706 -4.985 2755.2 "
+              transform="translate(0 32)"
               stroke="#4E4842"
               stroke-opacity="0.15"
               stroke-width="2"
               stroke-linejoin="round"
             />
 
-            <!-- Gelombang ketiga -->
             <path
-              d="M0 93.365C49.2 69.425 98.4 69.425 147.6 93.365C196.8 117.305 246 117.305 295.2 93.365C344.4 69.425 393.6 69.425 442.8 93.365C492 117.305 541.2 117.305 590.4 93.365C639.6 69.425 688.8 69.425 738 93.365C787.2 117.305 836.4 117.305 885.6 93.365C934.8 69.425 984 69.425 1033.2 93.365C1082.4 117.305 1131.6 117.305 1180.8 93.365C1230 69.425 1279.2 69.425 1328.4 93.365C1377.6 117.305 1426.8 117.305 1476 93.365"
+              d="M0 18.955C49.2 -4.985 98.4 -4.985 147.6 18.955C196.8 42.895 246 42.895 295.2 18.955C344.4 -4.985 393.6 -4.985 442.8 18.955C492 42.895 541.2 42.895 590.4 18.955C639.6 -4.985 688.8 -4.985 738 18.955C787.2 42.895 836.4 42.895 885.6 18.955C934.8 -4.985 984 -4.985 1033.2 18.955C1082.4 42.895 1131.6 42.895 1180.8 18.955C1230 -4.985 1279.2 -4.985 1328.4 18.955C1377.6 42.895 1426.8 42.895 1476 18.955C1525.2 -4.985 1574.4 -4.985 1623.6 18.955C1672.8 42.895 1722 42.895 1771.2 18.955C1820.4 -4.985 1869.6 -4.985 1918.8 18.955C1968 42.895 2017.2 42.895 2066.4 18.955C2115.6 -4.985 2164.8 -4.985 2214 18.955C2263.2 42.895 2312.4 42.895 2361.6 18.955C2410.8 -4.985 2460 -4.985 2509.2 18.955C2558.4 42.895 2607.6 42.895 2656.8 18.955C2706 -4.985 2755.2 "
+              transform="translate(0 64)"
               stroke="#4E4842"
               stroke-opacity="0.15"
               stroke-width="2"
               stroke-linejoin="round"
             />
 
-            <!-- Gelombang keempat -->
             <path
-              d="M0 64.52C49.2 40.58 98.4 40.58 147.6 64.52C196.8 88.46 246 88.46 295.2 64.52C344.4 40.58 393.6 40.58 442.8 64.52C492 88.46 541.2 88.46 590.4 64.52C639.6 40.58 688.8 40.58 738 64.52C787.2 88.46 836.4 88.46 885.6 64.52C934.8 40.58 984 40.58 1033.2 64.52C1082.4 88.46 1131.6 88.46 1180.8 64.52C1230 40.58 1279.2 40.58 1328.4 64.52C1377.6 88.46 1426.8 88.46 1476 64.52"
+              d="M0 18.955C49.2 -4.985 98.4 -4.985 147.6 18.955C196.8 42.895 246 42.895 295.2 18.955C344.4 -4.985 393.6 -4.985 442.8 18.955C492 42.895 541.2 42.895 590.4 18.955C639.6 -4.985 688.8 -4.985 738 18.955C787.2 42.895 836.4 42.895 885.6 18.955C934.8 -4.985 984 -4.985 1033.2 18.955C1082.4 42.895 1131.6 42.895 1180.8 18.955C1230 -4.985 1279.2 -4.985 1328.4 18.955C1377.6 42.895 1426.8 42.895 1476 18.955C1525.2 -4.985 1574.4 -4.985 1623.6 18.955C1672.8 42.895 1722 42.895 1771.2 18.955C1820.4 -4.985 1869.6 -4.985 1918.8 18.955C1968 42.895 2017.2 42.895 2066.4 18.955C2115.6 -4.985 2164.8 -4.985 2214 18.955C2263.2 42.895 2312.4 42.895 2361.6 18.955C2410.8 -4.985 2460 -4.985 2509.2 18.955C2558.4 42.895 2607.6 42.895 2656.8 18.955C2706 -4.985 2755.2 "
+              transform="translate(0 96)"
               stroke="#4E4842"
               stroke-opacity="0.15"
               stroke-width="2"
               stroke-linejoin="round"
             />
 
-            <!-- Gelombang kelima -->
             <path
-              d="M0 35.675C49.2 11.735 98.4 11.735 147.6 35.675C196.8 59.615 246 59.615 295.2 35.675C344.4 11.735 393.6 11.735 442.8 35.675C492 59.615 541.2 59.615 590.4 35.675C639.6 11.735 688.8 11.735 738 35.675C787.2 59.615 836.4 59.615 885.6 35.675C934.8 11.735 984 11.735 1033.2 35.675C1082.4 59.615 1131.6 59.615 1180.8 35.675C1230 11.735 1279.2 11.735 1328.4 35.675C1377.6 59.615 1426.8 59.615 1476 35.675"
+              d="M0 18.955C49.2 -4.985 98.4 -4.985 147.6 18.955C196.8 42.895 246 42.895 295.2 18.955C344.4 -4.985 393.6 -4.985 442.8 18.955C492 42.895 541.2 42.895 590.4 18.955C639.6 -4.985 688.8 -4.985 738 18.955C787.2 42.895 836.4 42.895 885.6 18.955C934.8 -4.985 984 -4.985 1033.2 18.955C1082.4 42.895 1131.6 42.895 1180.8 18.955C1230 -4.985 1279.2 -4.985 1328.4 18.955C1377.6 42.895 1426.8 42.895 1476 18.955C1525.2 -4.985 1574.4 -4.985 1623.6 18.955C1672.8 42.895 1722 42.895 1771.2 18.955C1820.4 -4.985 1869.6 -4.985 1918.8 18.955C1968 42.895 2017.2 42.895 2066.4 18.955C2115.6 -4.985 2164.8 -4.985 2214 18.955C2263.2 42.895 2312.4 42.895 2361.6 18.955C2410.8 -4.985 2460 -4.985 2509.2 18.955C2558.4 42.895 2607.6 42.895 2656.8 18.955C2706 -4.985 2755.2 "
+              transform="translate(0 128)"
               stroke="#4E4842"
               stroke-opacity="0.15"
               stroke-width="2"
@@ -214,17 +245,94 @@
       <!-- header -->
 
       <!-- about us -->
-      <div class="">about us brok</div>
+      <div
+        id="about-us"
+        class="max-w-7xl w-full lg:mx-auto py-10 md:p-20 gap-20 md:gap-28 flex flex-col items-center"
+      >
+        <h1
+          class="w-fit text-4xl lg:text-6xl font-frank font-semibold"
+        >
+          About US
+        </h1>
+        <div
+          class="w-full gap-y-7 flex flex-col md:flex-row items-center justify-between font-lato text-coklat"
+        >
+          <img
+            class="w-fit"
+            src="https://placehold.co/400x250"
+            alt="gambar gambaran"
+          />
+          <h1 class="w-[400px] md:w-2/6 text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+            minus laboriosam asperiores totam aliquam. Recusandae veniam numquam
+            maiores sapiente porro. Amet quasi consequatur ea quas vel in
+            commodi ipsa repellendus?
+          </h1>
+        </div>
+      </div>
       <!-- about us -->
+
+      <!-- collections -->
+      <div
+        id="collections"
+        class="max-w-7xl w-full lg:mx-auto py-10 md:p-20 gap-20 md:gap-28 flex flex-col items-center"
+      >
+        <h1 class="w-fit text-4xl lg:text-6xl font-frank font-semibold">
+          Collections
+        </h1>
+        <div class="flex flex-wrap-reverse justify-center lg:justify-between items-center w-full px-10 gap-7">
+          <div class="relative group">
+            <div class="z-[999] top-0 left-0 absolute w-52 h-52 flex flex-row items-end justify-center pb-3 bg-[#F1E4FF] group" >
+              <a href="" class="bg-[#34251F] text-white w-fit px-2 py-1.2 py-2 hover:scale-105 transition-all duration-500 font-frank font-semibold md:text-xl" >
+                Beli Sekarang
+              </a>
+            </div>
+            <div class="z-[9] w-52 h-52 bg-gray-200 transition-all duration-500 group-hover:translate-x-5 group-hover:translate-y-5"></div>
+          </div>
+          <div class="relative group">
+            <div class="z-[999] top-0 left-0 absolute w-52 h-52 flex flex-row items-end justify-center pb-3 bg-[#F1E4FF] group" >
+              <a href="" class="bg-[#34251F] text-white w-fit px-2 py-1.2 py-2 hover:scale-105 transition-all duration-500 font-frank font-semibold md:text-xl" >
+                Beli Sekarang
+              </a>
+            </div>
+            <div class="z-[9] w-52 h-52 bg-gray-200 transition-all duration-500 group-hover:translate-x-5 group-hover:translate-y-5"></div>
+          </div>
+          <div class="relative group">
+            <div class="z-[999] top-0 left-0 absolute w-52 h-52 flex flex-row items-end justify-center pb-3 bg-[#F1E4FF] group" >
+              <a href="" class="bg-[#34251F] text-white w-fit px-2 py-1.2 py-2 hover:scale-105 transition-all duration-500 font-frank font-semibold md:text-xl" >
+                Beli Sekarang
+              </a>
+            </div>
+            <div class="z-[9] w-52 h-52 bg-gray-200 transition-all duration-500 group-hover:translate-x-5 group-hover:translate-y-5"></div>
+          </div>
+        </div>
+      </div>
+      <!-- collections -->
     </div>
 
     <script>
-      document.getElementById("btn-menu").addEventListener("click", () => {
-        document.getElementById("top").classList.toggle("rotate-[37deg]");
-        document.getElementById("middle").classList.toggle("scale-0");
-        document.getElementById("bottom").classList.toggle("-rotate-[37deg]");
-        document.getElementById("menu-sm").classList.toggle("top-20");
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("btn-menu").addEventListener("click", () => {
+          document.getElementById("top").classList.toggle("rotate-[37deg]");
+          document.getElementById("middle").classList.toggle("scale-0");
+          document.getElementById("bottom").classList.toggle("-rotate-[37deg]");
+          document.getElementById("menu-sm").classList.toggle("top-20");
+        });
       });
+
+      const nav = document.getElementById("navbar");
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop >= 215 ||
+          document.documentElement.scrollTop >= 215
+        ) {
+          nav.classList.add("bg-glass");
+          nav.classList.remove("bg-transparent");
+        } else {
+          nav.classList.add("bg-transparent");
+          nav.classList.remove("bg-glass");
+        }
+      };
     </script>
   </body>
 </html>
