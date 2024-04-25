@@ -97,6 +97,15 @@
         object-fit: cover;
       }
       /* Swiper JS */
+
+      #answer {
+        transition: max-height 0.2s;
+      }
+
+      #question label + input[type="radio"]:checked + #answer {
+        max-height: max-content;
+        padding: 40px 80px; 
+      }
     </style>
 
     <title>Arvi Hijab</title>
@@ -538,12 +547,12 @@
           class="flex flex-wrap-reverse justify-center lg:justify-between items-center w-full px-10 lg:px-0 gap-7 transition-all duration-500"
         >
           <div id="question" class="flex flex-col justify-between w-full">
-            <input type="checkbox" name="question1" id="question1" hidden/>
-            <label for="question1" class="w-full flex flex-col justify-between w-full">
+            <!-- Question 1 -->
+            <div class="w-full flex flex-col">
               <span class="w-full h-1 bg-[#34251F] rounded-xl"></span>
-              <div class="flex flex-col px-20 py-10 gap-10 cursor-pointer">
+              <label for="question1">
                 <div
-                  class="flex flex-row items-center justify-between bg-white text-[#34251F] text-3xl font-lato"
+                  class="px-20 py-10 flex flex-row items-center justify-between bg-white text-[#34251F] text-3xl font-lato cursor-pointer"
                 >
                   <h1 class="font-semibold">Lorem ipsum dolor sit amet ?</h1>
                   <i
@@ -551,19 +560,128 @@
                     class="fa-solid fa-arrow-down transition-all duration-500"
                   ></i>
                 </div>
+              </label>
+              <input type="radio" name="faq" id="question1" hidden />
+              <div
+                id="answer"
+                class="max-h-0 px-20 text-xl overflow-hidden transition-all duration-500"
+              >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis numquam eum odit maxime sapiente, autem ea deleniti
+                  sed nemo nobis.
+                </p>
+              </div>
+              <span class="w-full h-0.5 bg-[#34251F] rounded-xl"></span>
+            </div>
+            <!-- Question 2 -->
+            <div class="w-full flex flex-col">
+              <span class="w-full h-0.5 bg-[#34251F] rounded-xl"></span>
+              <label for="question2">
                 <div
-                  id="answer"
-                  class="hidden text-xl transition-all duration-500"
+                  class="px-20 py-10 flex flex-row items-center justify-between bg-white text-[#34251F] text-3xl font-lato cursor-pointer"
                 >
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Facilis numquam eum odit maxime sapiente, autem ea deleniti
-                    sed nemo nobis.
-                  </p>
+                  <h1 class="font-semibold">Lorem ipsum dolor sit amet ?</h1>
+                  <i
+                    id="iconQ"
+                    class="fa-solid fa-arrow-down transition-all duration-500"
+                  ></i>
                 </div>
+              </label>
+              <input type="radio" name="faq" id="question2" hidden />
+              <div
+                id="answer"
+                class="max-h-0 px-20 text-xl overflow-hidden transition-all duration-500"
+              >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis numquam eum odit maxime sapiente, autem ea deleniti
+                  sed nemo nobis.
+                </p>
+              </div>
+              <span class="w-full h-0.5 bg-[#34251F] rounded-xl"></span>
+            </div>
+            <!-- Question 3 -->
+            <div class="w-full flex flex-col">
+              <span class="w-full h-0.5 bg-[#34251F] rounded-xl"></span>
+              <label for="question3">
+                <div
+                  class="px-20 py-10 flex flex-row items-center justify-between bg-white text-[#34251F] text-3xl font-lato cursor-pointer"
+                >
+                  <h1 class="font-semibold">Lorem ipsum dolor sit amet ?</h1>
+                  <i
+                    id="iconQ"
+                    class="fa-solid fa-arrow-down transition-all duration-500"
+                  ></i>
+                </div>
+              </label>
+              <input type="radio" name="faq" id="question3" hidden />
+              <div
+                id="answer"
+                class="max-h-0 px-20 text-xl overflow-hidden transition-all duration-500"
+              >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis numquam eum odit maxime sapiente, autem ea deleniti
+                  sed nemo nobis.
+                </p>
+              </div>
+              <span class="w-full h-0.5 bg-[#34251F] rounded-xl"></span>
+            </div>
+            <!-- Question 4 -->
+            <div class="w-full flex flex-col">
+              <span class="w-full h-0.5 bg-[#34251F] rounded-xl"></span>
+              <label for="question4">
+                <div
+                  class="px-20 py-10 flex flex-row items-center justify-between bg-white text-[#34251F] text-3xl font-lato cursor-pointer"
+                >
+                  <h1 class="font-semibold">Lorem ipsum dolor sit amet ?</h1>
+                  <i
+                    id="iconQ"
+                    class="fa-solid fa-arrow-down transition-all duration-500"
+                  ></i>
+                </div>
+              </label>
+              <input type="radio" name="faq" id="question4" hidden />
+              <div
+                id="answer"
+                class="max-h-0 px-20 text-xl overflow-hidden transition-all duration-500"
+              >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis numquam eum odit maxime sapiente, autem ea deleniti
+                  sed nemo nobis.
+                </p>
+              </div>
+              <span class="w-full h-0.5 bg-[#34251F] rounded-xl"></span>
+            </div>
+            <!-- Question 5 -->
+            <div class="w-full flex flex-col">
+              <span class="w-full h-0.5 bg-[#34251F] rounded-xl"></span>
+              <label for="question5">
+                <div
+                  class="px-20 py-10 flex flex-row items-center justify-between bg-white text-[#34251F] text-3xl font-lato cursor-pointer"
+                >
+                  <h1 class="font-semibold">Lorem ipsum dolor sit amet ?</h1>
+                  <i
+                    id="iconQ"
+                    class="fa-solid fa-arrow-down transition-all duration-500"
+                  ></i>
+                </div>
+              </label>
+              <input type="radio" name="faq" id="question5" hidden />
+              <div
+                id="answer"
+                class="max-h-0 px-20 text-xl overflow-hidden transition-all duration-500"
+              >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis numquam eum odit maxime sapiente, autem ea deleniti
+                  sed nemo nobis.
+                </p>
               </div>
               <span class="w-full h-1 bg-[#34251F] rounded-xl"></span>
-            </label>
+            </div>
           </div>
         </div>
       </div>
