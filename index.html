@@ -104,14 +104,18 @@
 
       #question label + input[type="radio"]:checked + #answer {
         max-height: max-content;
-        padding: 40px 80px; 
+        padding: 40px 80px;
+      }
+
+      #question input[type="radio"]:checked + label i#iqonQ {
+        rotate: 180deg;
       }
     </style>
 
     <title>Arvi Hijab</title>
   </head>
   <body>
-    <div class="min-h-screen w-full flex flex-col">
+    <div class="min-h-screen w-full flex flex-col bg-white">
       <!-- navbar -->
       <div
         id="navbar"
@@ -178,7 +182,7 @@
           </div>
           <div
             id="menu-sm"
-            class="absolute menu-sm lg:hidden -top-72 transition-all duration-700 left-0 py-5 px-5 md:px-16 w-full rounded-xl z-[999]"
+            class="absolute menu-sm lg:hidden -top-96 transition-all duration-700 left-0 py-5 px-5 md:px-16 w-full rounded-xl z-[999]"
           >
             <ul
               class="w-full flex flex-col text-xl md:text-2xl font-semibold gap-y-4 items-center bg-glass px-10 py-5"
@@ -296,7 +300,7 @@
         class="max-w-7xl w-full lg:mx-auto py-10 md:p-20 gap-20 md:gap-28 flex flex-col items-center"
       >
         <h1 class="w-fit text-4xl lg:text-6xl font-frank font-semibold">
-          About US
+          About Us
         </h1>
         <div
           class="w-full gap-y-7 flex flex-col md:flex-row items-center justify-between font-lato text-coklat"
@@ -538,21 +542,19 @@
 
       <!-- FAQ -->
       <div
+        id="faq"
         class="max-w-7xl w-full lg:mx-auto py-10 md:p-20 gap-20 md:gap-28 flex flex-col items-center"
       >
-        <h1 class="text-center font-lato font-bold text-3xl text-[#34251F]">
-          FAQ
-        </h1>
+        <h1 class="w-fit text-4xl lg:text-6xl font-frank font-semibold">FAQ</h1>
         <div
           class="flex flex-wrap-reverse justify-center lg:justify-between items-center w-full px-10 lg:px-0 gap-7 transition-all duration-500"
         >
           <div id="question" class="flex flex-col justify-between w-full">
-            <!-- Question 1 -->
             <div class="w-full flex flex-col">
               <span class="w-full h-1 bg-[#34251F] rounded-xl"></span>
               <label for="question1">
                 <div
-                  class="px-20 py-10 flex flex-row items-center justify-between bg-white text-[#34251F] text-3xl font-lato cursor-pointer"
+                  class="px-20 py-10 flex flex-row items-center justify-between bg-white text-[#34251F] text-xl lg:text-3xl font-lato cursor-pointer"
                 >
                   <h1 class="font-semibold">Lorem ipsum dolor sit amet ?</h1>
                   <i
@@ -574,12 +576,11 @@
               </div>
               <span class="w-full h-0.5 bg-[#34251F] rounded-xl"></span>
             </div>
-            <!-- Question 2 -->
             <div class="w-full flex flex-col">
               <span class="w-full h-0.5 bg-[#34251F] rounded-xl"></span>
               <label for="question2">
                 <div
-                  class="px-20 py-10 flex flex-row items-center justify-between bg-white text-[#34251F] text-3xl font-lato cursor-pointer"
+                  class="px-20 py-10 flex flex-row items-center justify-between bg-white text-[#34251F] text-xl lg:text-3xl font-lato cursor-pointer"
                 >
                   <h1 class="font-semibold">Lorem ipsum dolor sit amet ?</h1>
                   <i
@@ -601,12 +602,11 @@
               </div>
               <span class="w-full h-0.5 bg-[#34251F] rounded-xl"></span>
             </div>
-            <!-- Question 3 -->
             <div class="w-full flex flex-col">
               <span class="w-full h-0.5 bg-[#34251F] rounded-xl"></span>
               <label for="question3">
                 <div
-                  class="px-20 py-10 flex flex-row items-center justify-between bg-white text-[#34251F] text-3xl font-lato cursor-pointer"
+                  class="px-20 py-10 flex flex-row items-center justify-between bg-white text-[#34251F] text-xl lg:text-3xl font-lato cursor-pointer"
                 >
                   <h1 class="font-semibold">Lorem ipsum dolor sit amet ?</h1>
                   <i
@@ -628,12 +628,11 @@
               </div>
               <span class="w-full h-0.5 bg-[#34251F] rounded-xl"></span>
             </div>
-            <!-- Question 4 -->
             <div class="w-full flex flex-col">
               <span class="w-full h-0.5 bg-[#34251F] rounded-xl"></span>
               <label for="question4">
                 <div
-                  class="px-20 py-10 flex flex-row items-center justify-between bg-white text-[#34251F] text-3xl font-lato cursor-pointer"
+                  class="px-20 py-10 flex flex-row items-center justify-between bg-white text-[#34251F] text-xl lg:text-3xl font-lato cursor-pointer"
                 >
                   <h1 class="font-semibold">Lorem ipsum dolor sit amet ?</h1>
                   <i
@@ -655,12 +654,11 @@
               </div>
               <span class="w-full h-0.5 bg-[#34251F] rounded-xl"></span>
             </div>
-            <!-- Question 5 -->
             <div class="w-full flex flex-col">
               <span class="w-full h-0.5 bg-[#34251F] rounded-xl"></span>
               <label for="question5">
                 <div
-                  class="px-20 py-10 flex flex-row items-center justify-between bg-white text-[#34251F] text-3xl font-lato cursor-pointer"
+                  class="px-20 py-10 flex flex-row items-center justify-between bg-white text-[#34251F] text-xl lg:text-3xl font-lato cursor-pointer"
                 >
                   <h1 class="font-semibold">Lorem ipsum dolor sit amet ?</h1>
                   <i
@@ -686,6 +684,75 @@
         </div>
       </div>
       <!-- FAQ -->
+
+      <!-- contact us -->
+      <div
+        id="contact-us"
+        class="max-w-7xl w-full lg:mx-auto py-10 md:p-20 gap-20 md:gap-28 flex flex-col items-center"
+      >
+        <h1 class="w-fit text-4xl lg:text-6xl font-frank font-semibold">
+          Contact Us
+        </h1>
+        <div
+          class="flex justify-between items-center w-full h-full px-10 lg:px-0 gap-7 transition-all duration-500"
+        >
+          <div class="w-full h-96">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.2588619654528!2d109.15945197563384!3d-6.886357567028348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fb93f83f7118d%3A0x69e3d5807d020fcd!2sArvi.hijab!5e0!3m2!1sid!2sid!4v1714017008920!5m2!1sid!2sid"
+              class="w-full h-full flex"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="w-full h-96 flex flex-col justify-between">
+            <div class="flex flex-col">
+              <div class="py-3 px-1 flex flex-row justify-between">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100000432294421"
+                  target="_blank"
+                  class="font-lato font-semibold text-xl lg:text-2xl"
+                  >Davin Arvi</a
+                >
+                <i class="fa-brands fa-facebook h-fit lg:text-2xl"></i>
+              </div>
+              <span class="w-full h-0.5 bg-[#34251F] rounded-xl"></span>
+            </div>
+            <div class="flex flex-col">
+              <div class="py-3 px-1 flex flex-row justify-between">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100000432294421"
+                  target="_blank"
+                  class="font-lato font-semibold text-xl lg:text-2xl"
+                  >Davin Arvi</a
+                >
+                <i class="fa-brands fa-facebook h-fit lg:text-2xl"></i>
+              </div>
+              <span class="w-full h-0.5 bg-[#34251F] rounded-xl"></span>
+            </div>
+            <div class="flex flex-col">
+              <div class="py-3 px-1 flex flex-row justify-between">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100000432294421"
+                  target="_blank"
+                  class="font-lato font-semibold text-xl lg:text-2xl"
+                  >Davin Arvi</a
+                >
+                <i class="fa-brands fa-facebook h-fit lg:text-2xl"></i>
+              </div>
+              <span class="w-full h-0.5 bg-[#34251F] rounded-xl"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- contact us -->
+
+      <!-- footer -->
+      <footer class="w-full bg-gradient">
+        
+      </footer>
+      <!-- footer -->
     </div>
 
     <script>
