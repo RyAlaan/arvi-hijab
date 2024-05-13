@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      /* .background {
+        background: rgb(29, 45, 181);
+        background: linear-gradient(
+          -45deg,
+          rgba(29, 45, 181, 1) 0%,
+          rgba(165, 38, 207, 1) 73%
+        );
+      } */
+      .btn-4 {
+        border: 1px solid;
+        overflow: hidden;
+        position: relative;
+
+        span {
+          z-index: 20;
+        }
+
+        &:after {
+          background: #fff;
+          content: "";
+          height: 155px;
+          left: -75px;
+          opacity: 0.2;
+          position: absolute;
+          top: -50px;
+          transform: rotate(35deg);
+          transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+          width: 50px;
+          z-index: -10;
+        }
+      }
+
+      .btn-4:hover {
+        &:after {
+          left: 120%;
+          transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+      }
+    </style>
+  </head>
+  <body class="w-full min-h-screen flex justify-center items-center bg-red-500">
+    <a href="https://twitter.com/Dave_Conner" class="btn-4 background"
+      ><span>Hover</span></a
+    >
+  </body>
+</html>
