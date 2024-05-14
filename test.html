@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sdfa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .card__anch {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(
+          -45deg,
+          rgba(29, 45, 181, 1) 0%,
+          rgba(165, 38, 207, 1) 73%
+        );
+        border-radius: 9999px;
+        color: white;
+        font-family: Lato, sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        overflow: hidden;
+        position: relative;
+
+        .btn-4 {
+          padding: 0.5rem 0;
+          overflow: hidden;
+          position: relative;
+          width: 100%;
+
+          span {
+            z-index: 20;
+          }
+
+          &:after {
+            background: #fff;
+            content: "";
+            height: 155px;
+            left: -75px;
+            opacity: 0.2;
+            position: absolute;
+            top: -50px;
+            transform: rotate(35deg);
+            transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+            width: 50px;
+            z-index: 3;
+          }
+        }
+      }
+      .btn-4:hover {
+        &:after {
+          left: 120%;
+          transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+      }
+    </style>
+  </head>
+  <body class="w-full min-h-screen flex justify-center items-center bg-red-500">
+    <div class="card__anch overflow-hidden w-full">
+      <a
+        href=""
+        class="btn btn-4 flex flex-row items-center justify-center"
+        ><span>Hover</span></a
+      >
+    </div>
+  </body>
+</html>

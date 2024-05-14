@@ -49,8 +49,51 @@
           @apply flex flex-col justify-between gap-y-4 text-[#34251F] font-lato font-bold;
         }
 
-        .some {
-          @apply w-full py-2 md:py-4 flex justify-center items-center bg-gradient-card rounded-full text-white font-lato font-bold text-md md:text-xl;
+        .card__anch {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: linear-gradient(
+            -45deg,
+            rgba(29, 45, 181, 1) 0%,
+            rgba(165, 38, 207, 1) 73%
+          );
+          border-radius: 9999px;
+          color: white;
+          font-family: Lato, sans-serif;
+          font-weight: bold;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          overflow: hidden;
+          position: relative;
+
+          .btn-4 {
+            span {
+              z-index: 20;
+              padding: 2rem;
+              display: inline-block;
+            }
+
+            &:after {
+              background: #fff;
+              content: "";
+              height: 155px;
+              left: -75px;
+              opacity: 0.2;
+              position: absolute;
+              top: -50px;
+              transform: rotate(35deg);
+              transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+              width: 50px;
+              z-index: 10;
+            }
+          }
+        }
+        .btn-4:hover {
+          &:after {
+            left: 120%;
+            transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+          }
         }
       }
 
@@ -80,15 +123,6 @@
           rgba(114, 46, 224, 1) 0%,
           rgba(124, 58, 237, 1) 33%,
           rgba(113, 44, 222, 1) 59%
-        );
-      }
-
-      .bg-gradient-card {
-        background: rgb(29, 45, 181);
-        background: linear-gradient(
-          -45deg,
-          rgba(29, 45, 181, 1) 0%,
-          rgba(165, 38, 207, 1) 73%
         );
       }
 
@@ -237,7 +271,7 @@
             <div class="text-2xl lg:text-6xl font-frank font-bold">
               Temukan Gaya Yang Terbaik Untukmu
             </div>
-            <div class="text-md lg:text-2xl font-frank">
+            <div class="text-base lg:text-2xl font-frank">
               Kami menyediakan Busana Muslim yang terbaik dan yang pastinya
               nyaman untuk digunakan
             </div>
@@ -406,85 +440,89 @@
           Products
         </h1>
         <div
-          class="flex flex-wrap justify-center md:justify-between gap-8 md:gap-16 px-4 md:px-0 z-[999]"
+          class="flex flex-wrap justify-center md:justify-between gap-8 md:gap-16 px-4 md:px-0 z-50"
         >
           <div class="card">
             <img src="assets/Produk1" alt="" class="w-full h-full rounded-xl" />
             <div class="card__desc">
               <div class="pl-1">
-                <p class="text-md md:text-xl">Bergo maryam XL</p>
+                <p class="text-base md:text-xl">Bergo maryam XL</p>
               </div>
               <div class="flex flex-row justify-between items-center">
                 <p class="text-xs md:text-sm">⭐ | 4.5</p>
                 <p class="text-xs md:text-xl">Rp 40.000</p>
               </div>
             </div>
-            <a
-              href=""
-              class="w-full py-2 md:py-4 flex justify-center items-center bg-gradient-card rounded-full text-white font-lato font-bold text-md md:text-xl"
-            >
-              <p>Beli Sekarang</p>
-            </a>
+            <div class="card__anch">
+              <a
+                href=""
+                class="btn btn-4 flex flex-row items-center justify-center overflow-hidden w-full relative"
+                ><span class="">Hover</span></a
+              >
+            </div>
           </div>
           <div class="card">
             <img src="assets/Produk2" alt="" class="w-full h-full rounded-xl" />
             <div class="card__desc">
               <div class="pl-1">
-                <p class="text-md md:text-xl">Produk</p>
+                <p class="text-base md:text-xl">Produk</p>
               </div>
               <div class="flex flex-row justify-between items-center">
                 <p class="text-xs md:text-sm">⭐</p>
                 <p class="text-xs md:text-xl">Rp 200.000</p>
               </div>
             </div>
-            <a
-              href=""
-              class="w-full py-2 md:py-4 flex justify-center items-center bg-gradient-card rounded-full text-white font-lato font-bold text-md md:text-xl"
-            >
-              <p>Beli Sekarang</p>
-            </a>
+            <div class="card__anch">
+              <a
+                href=""
+                class="btn btn-4 flex flex-row items-center justify-center overflow-hidden w-full relative"
+                ><span class="">Hover</span></a
+              >
+            </div>
           </div>
           <div class="card">
             <img src="assets/Produk3" alt="" class="w-full h-full rounded-xl" />
             <div class="card__desc">
               <div class="pl-1">
-                <p class="text-md md:text-xl">Pasmina oval jersey kids</p>
+                <p class="text-base md:text-xl">Pasmina oval jersey kids</p>
               </div>
               <div class="flex flex-row justify-between items-center">
                 <p class="text-xs md:text-sm">⭐</p>
                 <p class="text-xs md:text-xl">Rp 25.000</p>
               </div>
             </div>
-            <a
-              href=""
-              class="w-full py-2 md:py-4 flex justify-center items-center bg-gradient-card rounded-full text-white font-lato font-bold text-md md:text-xl"
-            >
-              <p>Beli Sekarang</p>
-            </a>
+            <div class="card__anch">
+              <a
+                href=""
+                class="btn btn-4 flex flex-row items-center justify-center overflow-hidden w-full relative"
+                ><span class="">Hover</span></a
+              >
+            </div>
           </div>
           <div class="card">
             <img src="assets/Produk4" alt="" class="w-full h-full rounded-xl" />
             <div class="card__desc">
               <div class="pl-1">
-                <p class="text-md md:text-xl">Produk</p>
+                <p class="text-base md:text-xl">Produk</p>
               </div>
               <div class="flex flex-row justify-between items-center">
                 <p class="text-xs md:text-sm">⭐</p>
                 <p class="text-xs md:text-xl">Rp 200.000</p>
               </div>
             </div>
-            <a
-              href=""
-              class="w-full py-2 md:py-4 flex justify-center items-center bg-gradient-card rounded-full text-white font-lato font-bold text-md md:text-xl"
-            >
-              <p>Beli Sekarang</p>
-            </a>
+            <div class="card__anch">
+              <a
+                href=""
+                class="btn btn-4 flex flex-row items-center justify-center overflow-hidden w-full relative"
+                ><span class="">Hover</span></a
+              >
+            </div>
           </div>
           <div class="card hidden md:flex">
             <img src="assets/Produk5" alt="" class="w-full h-full rounded-xl" />
             <div class="card__desc">
               <div class="pl-1">
-                <p class="text-md md:text-xl">
+                <p class="text-base md:text-xl">
                   Pasmina instan oval baby balon prem
                 </p>
               </div>
@@ -493,30 +531,32 @@
                 <p class="text-xs md:text-xl">Rp 25.000</p>
               </div>
             </div>
-            <a
-              href=""
-              class="w-full py-2 md:py-4 flex justify-center items-center bg-gradient-card rounded-full text-white font-lato font-bold text-md md:text-xl"
-            >
-              <p>Beli Sekarang</p>
-            </a>
+            <div class="card__anch">
+              <a
+                href=""
+                class="btn btn-4 flex flex-row items-center justify-center overflow-hidden w-full relative"
+                ><span class="">Hover</span></a
+              >
+            </div>
           </div>
           <div class="card hidden md:flex">
             <img src="assets/Produk6" alt="" class="w-full h-full rounded-xl" />
             <div class="card__desc">
               <div class="pl-1">
-                <p class="text-md md:text-xl">Produk</p>
+                <p class="text-base md:text-xl">Produk</p>
               </div>
               <div class="flex flex-row justify-between items-center">
                 <p class="text-xs md:text-sm">⭐</p>
                 <p class="text-xs md:text-xl">Rp 200.000</p>
               </div>
             </div>
-            <a
-              href=""
-              class="w-full py-2 md:py-4 flex justify-center items-center bg-gradient-card rounded-full text-white font-lato font-bold text-md md:text-xl"
-            >
-              <p>Beli Sekarang</p>
-            </a>
+            <div class="card__anch">
+              <a
+                href=""
+                class="btn btn-4 flex flex-row items-center justify-center overflow-hidden w-full relative"
+                ><span class="">Hover</span></a
+              >
+            </div>
           </div>
         </div>
         <h1
@@ -848,7 +888,7 @@
             </div>
             <p>Temukan Gaya Yang Terbaik Untukmu</p>
           </div>
-          <div class="text-md lg:text-xl">
+          <div class="text-base lg:text-xl">
             <ul>
               <li class="flex flex-row justify-between items-center gap-x-4">
                 <a href="">facebook</a>
