@@ -42,7 +42,7 @@
             },
             colors: {
               primary: "#EEDDCC",
-              secondary: "",
+              secondary: "#8B6E5A",
               tertiary: "#2C1915",
               text: "#34251F",
             },
@@ -142,6 +142,15 @@
         -webkit-backdrop-filter: blur(6.8px);
       }
 
+      .bg-gradient-circle {
+        background: rgb(238, 221, 204);
+        background: radial-gradient(
+          circle,
+          rgba(238, 221, 204, 1) 0%,
+          rgba(139, 110, 90, 1) 100%
+        );
+      }
+
       #answer {
         transition: max-height 0.2s;
       }
@@ -157,7 +166,7 @@
   <body class="overflow-x-hidden">
     <div class="min-h-screen w-full flex flex-col bg-white text-text">
       <!-- navbar -->
-      <div
+      <nav
         id="navbar"
         class="top-0 left-0 right-0 fixed bg-transparent z-[999999] rounded-none"
       >
@@ -165,7 +174,11 @@
           class="max-w-[1400px] w-full mx-auto px-5 md:px-20 py-6 flex flex-row justify-between items-center font-lato"
         >
           <div class="logo">
-            <a href="#header" class="text-2xl font-semibold">
+            <a
+              style="color: inherit; text-decoration: inherit"
+              href="#header"
+              class="text-2xl font-semibold"
+            >
               <svg
                 width="33"
                 height="33"
@@ -186,42 +199,58 @@
           </div>
           <div class="menu hidden lg:flex">
             <ul
-              class="w-full flex flex-row text-xl font-semibold text-text gap-x-8"
+              class="w-full flex flex-row text-lg font-semibold text-text gap-x-8"
             >
               <li class="flex flex-col group">
-                <a href="#about-us">About Us</a
+                <a
+                  style="color: inherit; text-decoration: inherit"
+                  href="#about-us"
+                  >About Us</a
                 ><span
-                  class="w-10/12 h-1 self-center rounded-md scale-0 group-hover:scale-100 transition-all duration-500 bg-text"
+                  class="w-10/12 h-0.5 self-center rounded-md scale-0 group-hover:scale-100 transition-all duration-500 bg-text"
                 ></span>
               </li>
               <li class="flex flex-col group">
-                <a href="#collections">Collections</a
+                <a
+                  style="color: inherit; text-decoration: inherit"
+                  href="#collections"
+                  >Collections</a
                 ><span
-                  class="w-10/12 h-1 self-center rounded-md scale-0 group-hover:scale-100 transition-all duration-500 bg-text"
+                  class="w-10/12 h-0.5 self-center rounded-md scale-0 group-hover:scale-100 transition-all duration-500 bg-text"
                 ></span>
               </li>
               <li class="flex flex-col group">
-                <a href="#products">Our Products</a
+                <a
+                  style="color: inherit; text-decoration: inherit"
+                  href="#products"
+                  >Our Products</a
                 ><span
-                  class="w-10/12 h-1 self-center rounded-md scale-0 group-hover:scale-100 transition-all duration-500 bg-text"
+                  class="w-10/12 h-0.5 self-center rounded-md scale-0 group-hover:scale-100 transition-all duration-500 bg-text"
                 ></span>
               </li>
               <li class="flex flex-col group">
-                <a href="#testimonials">Testimonials</a
+                <a
+                  style="color: inherit; text-decoration: inherit"
+                  href="#testimonials"
+                  >Testimonials</a
                 ><span
-                  class="w-10/12 h-1 self-center rounded-md scale-0 group-hover:scale-100 transition-all duration-500 bg-text"
+                  class="w-10/12 h-0.5 self-center rounded-md scale-0 group-hover:scale-100 transition-all duration-500 bg-text"
                 ></span>
               </li>
               <li class="flex flex-col group">
-                <a href="#faq">FAQ</a
+                <a style="color: inherit; text-decoration: inherit" href="#faq"
+                  >FAQ</a
                 ><span
-                  class="w-10/12 h-1 self-center rounded-md scale-0 group-hover:scale-100 transition-all duration-500 bg-text"
+                  class="w-10/12 h-0.5 self-center rounded-md scale-0 group-hover:scale-100 transition-all duration-500 bg-text"
                 ></span>
               </li>
               <li class="flex flex-col group">
-                <a href="#contact-us">Contact Us</a
+                <a
+                  style="color: inherit; text-decoration: inherit"
+                  href="#contact-us"
+                  >Contact Us</a
                 ><span
-                  class="w-10/12 h-1 self-center rounded-md scale-0 group-hover:scale-100 transition-all duration-500 bg-text"
+                  class="w-10/12 h-0.5 self-center rounded-md scale-0 group-hover:scale-100 transition-all duration-500 bg-text"
                 ></span>
               </li>
             </ul>
@@ -251,28 +280,53 @@
               class="w-full flex flex-col text-xl md:text-2xl text-text font-semibold gap-y-4 items-center bg-glass px-10 py-5"
             >
               <li class="w-full flex-row text-center">
-                <a class="w-full" href="#about-us">About Us</a>
+                <a
+                  style="color: inherit; text-decoration: inherit"
+                  class="w-full"
+                  href="#about-us"
+                  >About Us</a
+                >
               </li>
               <li class="w-full flex-row text-center">
-                <a class="w-full" href="#collections">Collections</a>
+                <a
+                  style="color: inherit; text-decoration: inherit"
+                  class="w-full"
+                  href="#collections"
+                  >Collections</a
+                >
               </li>
               <li class="w-full flex-row text-center">
-                <a class="w-full" href="#products">Our Products</a>
+                <a
+                  style="color: inherit; text-decoration: inherit"
+                  class="w-full"
+                  href="#products"
+                  >Our Products</a
+                >
               </li>
               <li class="w-full flex-row text-center">
-                <a class="w-full" href="#faq">FAQ</a>
+                <a
+                  style="color: inherit; text-decoration: inherit"
+                  class="w-full"
+                  href="#faq"
+                  >FAQ</a
+                >
               </li>
               <li class="w-full flex-row text-center">
-                <a class="w-full" href="#contact-us">Contact Us</a>
+                <a
+                  style="color: inherit; text-decoration: inherit"
+                  class="w-full"
+                  href="#contact-us"
+                  >Contact Us</a
+                >
               </li>
             </ul>
           </div>
         </div>
-      </div>
+      </nav>
       <!-- navbar -->
 
       <!-- header -->
-      <div
+      <header
         id="header"
         class="bg-gradient w-full min-h-[725px] lg:min-h-screen flex flex-row justify-between items-center"
       >
@@ -289,7 +343,7 @@
               Kami menyediakan Busana Muslim yang terbaik dan yang pastinya
               nyaman untuk digunakan
             </div>
-            <a href="">
+            <a style="color: inherit; text-decoration: inherit" href="">
               <div
                 class="bg-text text-white w-fit px-2 md:px-4 py-3 md:py-5 font-lato font-semibold md:text-2xl hover:scale-105 transition-all"
               >
@@ -376,11 +430,11 @@
             />
           </svg>
         </div>
-      </div>
+      </header>
       <!-- header -->
 
       <!-- about us -->
-      <div
+      <section
         id="about-us"
         class="max-w-7xl w-full lg:mx-auto py-10 md:p-20 gap-20 md:gap-28 flex flex-col items-center text-text"
       >
@@ -508,13 +562,13 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- about us -->
 
       <!-- collections -->
-      <div
+      <section
         id="collections"
-        class="relative max-w-7xl w-full lg:mx-auto py-10 md:p-20 gap-20 md:gap-28 flex flex-col items-center text-text"
+        class="relative max-w-7xl w-full min-h-screen lg:mx-auto py-10 md:p-20 gap-20 md:gap-28 flex flex-col items-center text-text"
       >
         <!-- <div class="absolute top-0 left-0 w-[564px] h-[645px] hidden md:flex border-l-2 border-t-2 border-black">adsfadfs</div> -->
         <h1 class="w-fit text-4xl lg:text-6xl font-frank font-semibold">
@@ -585,13 +639,13 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- collections -->
 
       <!-- products -->
-      <div
+      <section
         id="products"
-        class="relative max-w-7xl w-full lg:mx-auto py-10 md:p-20 gap-20 md:gap-28 flex flex-col items-center"
+        class="relative max-w-7xl w-full lg:mx-auto py-10 md:px-20 md:py-52 gap-20 md:gap-28 flex flex-col items-center"
       >
         <h1 class="w-fit text-4xl lg:text-6xl font-frank font-semibold">
           Products
@@ -616,6 +670,7 @@
             </div>
             <div class="card__anch">
               <a
+                style="color: inherit; text-decoration: inherit"
                 href="https://www.facebook.com/profile.php?id=100000432294421"
                 class="btn btn-4 flex flex-row items-center justify-center overflow-hidden w-full relative"
                 ><span class="text-sm md:text-xl font-lato font-bold text-white"
@@ -641,6 +696,7 @@
             </div>
             <div class="card__anch">
               <a
+                style="color: inherit; text-decoration: inherit"
                 href="https://www.facebook.com/profile.php?id=100000432294421"
                 class="btn btn-4 flex flex-row items-center justify-center overflow-hidden w-full relative"
                 ><span class="text-sm md:text-xl font-lato font-bold text-white"
@@ -666,6 +722,7 @@
             </div>
             <div class="card__anch">
               <a
+                style="color: inherit; text-decoration: inherit"
                 href="https://www.facebook.com/100000432294421/posts/pfbid02RCNxATAmfLhXdgLW9ie1n28f8zPqUQq3gmtbWfBXPcJkArrBSc2xc7kvSHPqBQaql/?app=fbl"
                 class="btn btn-4 flex flex-row items-center justify-center overflow-hidden w-full relative"
                 ><span class="text-sm md:text-xl font-lato font-bold text-white"
@@ -691,6 +748,7 @@
             </div>
             <div class="card__anch">
               <a
+                style="color: inherit; text-decoration: inherit"
                 href="https://www.facebook.com/profile.php?id=100000432294421"
                 class="btn btn-4 flex flex-row items-center justify-center overflow-hidden w-full relative"
                 ><span class="text-sm md:text-xl font-lato font-bold text-white"
@@ -718,6 +776,7 @@
             </div>
             <div class="card__anch">
               <a
+                style="color: inherit; text-decoration: inherit"
                 href="https://www.facebook.com/100000432294421/posts/pfbid02RCNxATAmfLhXdgLW9ie1n28f8zPqUQq3gmtbWfBXPcJkArrBSc2xc7kvSHPqBQaql/?app=fbl"
                 class="btn btn-4 flex flex-row items-center justify-center overflow-hidden w-full relative"
                 ><span class="text-sm md:text-xl font-lato font-bold text-white"
@@ -743,6 +802,7 @@
             </div>
             <div class="card__anch">
               <a
+                style="color: inherit; text-decoration: inherit"
                 href="https://www.facebook.com/profile.php?id=100000432294421"
                 class="btn btn-4 flex flex-row items-center justify-center overflow-hidden w-full relative"
                 ><span class="text-sm md:text-xl font-lato font-bold text-white"
@@ -760,13 +820,13 @@
         >
           Our Products
         </h1>
-      </div>
+      </section>
       <!-- products -->
 
-      <!-- Testimoni -->
-      <div
+      <!-- Testimonials -->
+      <section
         id="testimonials"
-        class="max-w-7xl w-full lg:mx-auto py-10 md:p-20 gap-20 md:gap-28 flex flex-col items-center"
+        class="max-w-7xl w-full lg:mx-auto py-10 md:px-20 md:py-52 gap-20 md:gap-28 flex flex-col items-center"
       >
         <h1 class="w-fit text-4xl lg:text-6xl font-frank font-semibold">
           What People say about Us
@@ -832,13 +892,13 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- Testimoni -->
 
       <!-- FAQ -->
-      <div
+      <section
         id="faq"
-        class="max-w-7xl w-full lg:mx-auto py-10 md:p-20 gap-20 md:gap-28 flex flex-col justify-center items-center"
+        class="max-w-7xl w-full min-h-screen lg:mx-auto py-10 md:p-20 gap-20 md:gap-28 flex flex-col justify-center items-center"
       >
         <div class="w-full sm:w-10/12 md:w-full my-1">
           <div class="w-full flex flex-col items-center">
@@ -946,7 +1006,11 @@
                     Toko kami berada di JL. Raya Sulang RT01/5, Desa Mejasem
                     Timur, Kec. Kramat, Kab. Tegal atau anda bisa mengunjugi
                     google map di section
-                    <a href="#contact-us">contact us</a>.
+                    <a
+                      style="color: inherit; text-decoration: inherit"
+                      href="#contact-us"
+                      >contact us</a
+                    >.
                   </p>
                 </article>
               </details>
@@ -986,19 +1050,14 @@
             </li>
           </ul>
         </div>
-      </div>
+      </section>
       <!-- FAQ -->
 
       <!-- contact us -->
-      <div
-        id="contact-us"
-        class="max-w-7xl w-full lg:mx-auto py-10 md:p-20 gap-20 md:gap-28 flex flex-col items-center"
-      >
-        <h1 class="w-fit mx-auto text-4xl lg:text-6xl font-frank font-semibold">
-          Contact Us
-        </h1>
-        <div
-          class="flex flex-col lg:flex-row justify-between items-center w-full h-full px-10 lg:px-0 gap-7 transition-all duration-500"
+      <section class="bg-secondary w-full">
+        <section
+          id="contact-us"
+          class="max-w-7xl w-full lg:mx-auto py-10 md:p-20 gap-20 md:gap-28 flex flex-row items-center text-black"
         >
           <div class="w-full h-96">
             <iframe
@@ -1010,10 +1069,18 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-          <div class="w-full lg:h-96 flex flex-col justify-between">
+          <div
+            class="relative w-full lg:h-96 flex flex-col justify-between z-20"
+          >
+            <h1
+              class="w-fit mx-auto text-4xl lg:text-6xl font-frank font-semibold"
+            >
+              Contact Us
+            </h1>
             <div class="flex flex-col">
               <div class="py-3 px-1 flex flex-row justify-between">
                 <a
+                  style="color: inherit; text-decoration: inherit"
                   href="https://www.facebook.com/profile.php?id=100000432294421"
                   target="_blank"
                   class="font-lato font-semibold text-xl lg:text-2xl"
@@ -1026,6 +1093,7 @@
             <div class="flex flex-col">
               <div class="py-3 px-1 flex flex-row justify-between">
                 <a
+                  style="color: inherit; text-decoration: inherit"
                   href="https://www.facebook.com/profile.php?id=100000432294421"
                   target="_blank"
                   class="font-lato font-semibold text-xl lg:text-2xl"
@@ -1038,6 +1106,7 @@
             <div class="flex flex-col">
               <div class="py-3 px-1 flex flex-row justify-between">
                 <a
+                  style="color: inherit; text-decoration: inherit"
                   href="mailto:alantisderry@gmail.com"
                   target="_blank"
                   class="font-lato font-semibold text-xl lg:text-2xl"
@@ -1047,9 +1116,18 @@
               </div>
               <span class="w-full h-0.5 bg-text rounded-xl"></span>
             </div>
+            <!-- <div
+              class="absolute left-1/2 top-1/5 -ml-[50px] -mt-[50px] circle w-32 aspect-square bg-gradient-circle rounded-full -z-[1]"
+            ></div> -->
           </div>
-        </div>
-      </div>
+        </section>
+      </section>
+      <!-- <div
+            class="flex flex-col lg:flex-row justify-between items-center w-full h-full px-10 lg:px-0 gap-7 transition-all duration-500"
+          >
+
+          </div> -->
+
       <!-- contact us -->
 
       <!-- footer -->
@@ -1082,12 +1160,54 @@
               <ul
                 class="flex flex-col gap-y-5 font-normal underline underline-offset-5"
               >
-                <li><a href="#about-us" class="">About Us</a></li>
-                <li><a href="#collections" class="">Collections</a></li>
-                <li><a href="#products" class="">Our Products</a></li>
-                <li><a href="#testimonials" class="">Testimonials</a></li>
-                <li><a href="#faq" class="">FAQ</a></li>
-                <li><a href="#contact-us" class="">Contact Us</a></li>
+                <li>
+                  <a
+                    style="color: inherit; text-decoration: inherit"
+                    href="#about-us"
+                    class=""
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    style="color: inherit; text-decoration: inherit"
+                    href="#collections"
+                    class=""
+                    >Collections</a
+                  >
+                </li>
+                <li>
+                  <a
+                    style="color: inherit; text-decoration: inherit"
+                    href="#products"
+                    class=""
+                    >Our Products</a
+                  >
+                </li>
+                <li>
+                  <a
+                    style="color: inherit; text-decoration: inherit"
+                    href="#testimonials"
+                    class=""
+                    >Testimonials</a
+                  >
+                </li>
+                <li>
+                  <a
+                    style="color: inherit; text-decoration: inherit"
+                    href="#faq"
+                    class=""
+                    >FAQ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    style="color: inherit; text-decoration: inherit"
+                    href="#contact-us"
+                    class=""
+                    >Contact Us</a
+                  >
+                </li>
               </ul>
             </div>
             <div class="flex flex-col gap-y-5">
@@ -1099,13 +1219,17 @@
               >
                 <li>
                   <a
+                    style="color: inherit; text-decoration: inherit"
                     href="https://www.facebook.com/profile.php?id=100000432294421"
                     class=""
                     >Facebook</a
                   >
                 </li>
                 <li>
-                  <a href="mailto:alantisderry@gmail.com" class=""
+                  <a
+                    style="color: inherit; text-decoration: inherit"
+                    href="mailto:alantisderry@gmail.com"
+                    class=""
                     >davinarvi@gmail.com</a
                   >
                 </li>
